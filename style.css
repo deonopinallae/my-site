@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body{
+    font-family: 'Comfortaa';
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(52, 52, 52);
+    background: #efeced;
+    line-height: 1.5;
+}
+.container{
+    max-width: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+p{
+    color: rgb(75, 23, 57);
+}
+a{
+    color: inherit;
+}
+a:active{
+    color: rgb(142, 91, 131);
+}
+a:hover{
+    color: rgb(119, 104, 119);
+}
+a:visited{
+    color: rgb(168, 159, 159);
+}
+.btn{
+    background-color: #c5b4c9;
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.6;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card{
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.card__list-item{
+    margin-bottom: 15px;
+}
+.card__list-item:last-child{
+    margin-bottom: none;
+}
+.card__table td:nth-child(2){
+    font-weight: 500;
+    color: rgb(72, 94, 83);
+}
+.card__table tr, .card__table td{
+    padding: 10px;
+}
+.social{
+    background-color: #e1e4f5;
+}
+.hobby{
+    background-color: #efdbf2;
+}
+.work{
+    background-color: #fffbe9;
+}
+
+
+.info__img{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px rgb(175, 151, 155);
+    display: inline;
+}
+.info{
+    display: flex;
+    gap: 30px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.form__input, .form__textarea{
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+@media (max-width: 500px){
+    body{
+        font-size: 12px;
+    }
+   .info{
+    display: block;
+    text-align: center;
+   }
+}
